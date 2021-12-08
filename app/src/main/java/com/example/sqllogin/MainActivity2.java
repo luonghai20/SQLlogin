@@ -20,7 +20,5 @@ public class MainActivity2 extends AppCompatActivity {
 
         edUsername2.setText(bundle.getString("username","get username fail"));
         edPassword2.setText(bundle.getString("password","get password fail"));
-
-
     }
 }

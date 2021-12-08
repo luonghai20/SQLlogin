@@ -8,13 +8,6 @@
     tools:context=".MainActivity"
     android:gravity="center_vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:textSize="30dp"
-        android:layout_gravity="center"
-        android:textStyle="bold"/>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:hint="Username"/>
+            android:hint="Tên đăng nhập"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -36,7 +29,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:hint="Password"/>
+            android:hint="Mật khẩu"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvConPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Nhập lại mật khẩu"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -46,17 +51,8 @@
         android:layout_gravity="center_horizontal"
         android:paddingLeft="100dp"
         android:paddingRight="100dp"
-        android:text="Login"
+        android:text="OK"
         android:onClick="login_click"/>
 
-    <Button
-        android:id="@+id/btnCheck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:paddingLeft="100dp"
-        android:paddingRight="100dp"
-        android:text="Check"
-        android:onClick="check_click"/>
 
 </LinearLayout>
